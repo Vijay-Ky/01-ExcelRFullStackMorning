@@ -1,0 +1,66 @@
+/* 
+Media queries
+Resposive design
+style elelments on different screen sizes
+
+min-width - starting from
+max-width - up to
+Mobile first 
+*/
+body
+{
+    background: blue;
+}
+
+h1
+{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+img
+{
+    width: 600px;
+}
+
+@media screen and (max-width: 576px)
+{
+    body
+    {
+        background: red;
+    }
+
+    .banner
+    {
+        background: yellow;
+    }
+
+    h1
+    {
+        color: black;
+        font-size: 60px;
+    }
+
+    img
+    {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+    }
+}
+
+/* @media screen and (max-width: 768px)
+{
+    body
+    {
+        background: green;
+    }
+
+    .banner
+    {
+        margin-top: 60px;
+        background: pink;
+    }
+} */

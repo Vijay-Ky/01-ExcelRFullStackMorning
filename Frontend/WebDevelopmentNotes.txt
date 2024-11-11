@@ -1,0 +1,368 @@
+-----------------------------------WebDevelopment Notes--------------------------
+Q. What is Web??
+A. The Web, short for World Wide Web, is an interconnected system of web pages and resources that are accessible over the internet.
+
+Q. Who invented Web??
+A. It was invented by Sir Tim Berners-Lee in 1989 and has since revolutionized the way we share and consume information.
+
+Q. What is Internet??
+A. The Internet is a network of connected computers. The purpose of connecting computers together, of course, is to share and consume information
+
+Q. Explain Web in detail?
+A. The Web is a global network of servers and clients connected via the Internet. It relies on the  Hypertext Transfer Protocol (HTTP) for the exchange of data between web servers and web browsers.
+• Web pages are documents containing various types of content, such as text, images, videos, and interactive elements. These pages are interconnected through hyperlinks, allowing users to navigate between them.
+• Web browsers (e.g., Google Chrome, Mozilla Firefox, Microsoft Edge) enable users to access and view web pages by interpreting the HTML, CSS, and JavaScript code that is used to create them.
+
+Q. What is HTTP ?? and HTTPS??
+• HTTP is the protocol that is used for viewing web pages.
+• Hypertext Transfer Protocol (HTTP) is like a language that allows computers and web browsers to talk to each other and share information on the internet.
+• when you type the web address like www.google.com and enter you will notice that automatically http:// or https:// automatically added to the front of the web address.
+• In case of standard HTTP, all information is sent in clear text.
+• all the information that is exchanged between your computer and that web server, which includes any text that you type on that website, that information is transefered over the public internet. and because its transefered in clear text, its vulneralble to anybody who wants it, such as hackers
+• this would not be a big deal if you were just browsing regular websites like wikipedia, and no sensitive data such as passwords credit card information are being used. but if you were to type in personal sensitive data like your name, address, phone number, passwords, or credit card information that sensitive data goes from your computer and then it has to travel across the public internet to get to that web server. and this makes your data vulneralble since a hacker can steal our information.
+• This is why HTTPS was developed. stands for Secure Hypertext Transfer Protocol. this is HTTP with a security feature. HTTPS encrypts the data that being retrieved by HTTP. ensures that all the data thats being transefered over the internet between computers and servers is secure by making the data impossible to read. and it does this by using encription algorithms. 
+• you might have noticed that when you visit the banking or any website that process your personal data will be using this https:// protocol. Image: refere image number 1 and 2
+
+Q. What are Web Applications??
+• Web applications (or web apps) are software applications that are accessed and run through web browsers. They provide dynamic, interactive, and often personalized user experiences.
+• Unlike traditional desktop applications that are installed locally on a device, web apps are hosted on remote servers and accessed over the internet.
+• They are typically built using web technologies like HTML, CSS, and JavaScript for the client-side and various server-side technologies (e.g., PHP, Python, Node.js) to handle data processing and interactions with databases.
+
+Q. What are the types of Web Applications??
+• Static Web Applications Ex: Blogs, Wikipedia
+• Dynamic Web Applications Ex: Flight booking, Sport updates
+• Ecommerce Applications Ex: Online shopping
+• Portal Web Applications Ex: Government Portals, Student or employee portal IMAGE: 3
+
+Q. What is Mobile??
+• Mobile, short for mobile devices, refers to handheld electronic devices that are portable and designed for wireless communication. The most common types of mobile devices are smartphones and tablets.
+• These devices are equipped with various hardware components, including processors, memory, displays, cameras, and sensors, allowing users to perform a wide range of tasks on the go.
+• Mobile devices are connected to cellular networks (2G, 3G, 4G, and now 5G) and often have Wi-Fi capabilities to access the internet and communicate with other devices.
+
+Q. What are Mobile applications??
+• Mobile applications, commonly known as mobile apps, are software applications specifically designed to run on mobile devices. 
+• Mobile apps can be downloaded and installed from app stores, such as Apple's App Store for iOS devices and Google Play Store for Android devices.
+• They are developed using programming languages and frameworks optimized for mobile platforms, such as Swift or Objective-C for iOS apps and Java or Kotlin for Android apps.
+• Ex: Web Apps: Chrome, Safari, Firefox
+
+Q. Web vs. Mobile: The difference between a mobile app vs web app: Pros and cons
+Native mobile apps
+Pros:
+- Faster than web apps
+- Greater functionality as they have access to system resources
+- Can work offline
+- Safe and secure—native apps must first be approved by the app store
+- Easier to build due to the availability of developer tools, interface elements, and SDKs
+Cons:
+- More expensive to build than web apps
+Compatibility with different platforms (i.e. iOS and Android) usually means designing and building the app from scratch
+- Expensive to maintain and update
+- It may prove difficult to get a native app approved by the app store
+
+Web apps
+Pros:
+- Do not need to be downloaded or installed—web apps function in-browser
+- Easy to maintain—they have a common codebase regardless of mobile platform
+- Will update themselves
+- Quicker and easier to build than mobile apps
+- Do not require app store approval, so can be launched quickly
+
+Cons:
+- Do not work offline
+- Less advanced in terms of features for mobile apps
+- May not be as discoverable as mobile apps as they are not listed in a specific database, such as the app store
+- Quality and security is not always guaranteed—web apps don’t need to be approved by the app sto
+
+
+Q. Web Designer vs HTML Developer
+Web Designer
+• Creates the look and feel of a website
+• Chooses color schemes, fonts, and overall style
+• Uses design software to create mockups
+• May have knowledge of HTML/CSS but not required
+HTML Developer
+• Ensures the website is functional and accessible
+• Responsible for coding and implementing the design
+• May work with content management systems (CMS)
+• Uses HTML, CSS, and sometimes JavaScript
+• Needs to have a solid understanding of coding principles.
+• Focuses on writing HTML, CSS, and JavaScript code.
+• Works closely with designers to bring their vision to life.
+• Uses tools like Sublime Text and Visual Studio Code.
+
+Their Roles Interaction
+• Web designers create the visual design and layout
+• HTML developers turn the design into code
+• The two roles often overlap and can depend on each other
+• Communication and collaboration are key
+Both Roles are Important
+• Both roles are critical to successful website development
+• Web designers create the user experience and brand identity
+• HTML developers ensure the website works as intended
+• Balancing design and function leads to happy clients and users
+
+Key Differences
+• Web designers focus on aesthetics, HTML developers focus on functionality.
+• Web designers may not know how to code, HTML developers must know how to code.
+• Web designers work more closely with UX designers and copywriters, HTML developers work more closely with backend developers.
+• Web designers may use tools like Adobe Photoshop, HTML developers use code editors like Sublime Text.
+
+Q. How Internet works??
+• data center can be anywhere on the internet that will store the information
+• information will not be reaching your device through satellite because satellites will be 22000 km above from the earth. due to that information has to travel 44000 and causing delays in serving data. due to that isssue fiber optical fiber cables will be used, which connects b/w data center and our device
+• information will be stored inside the data center SSD(internal memory of the server)
+• server is a powerful computer job is to provide the information
+• every device(mobile, computer, server) which is connected to the internet which is identified by an IP address(string of numbers) IP addres(ex: home address)uniquekly identifing the device.
+• its difficult to remember so many IP address so to solve this problem domain names which corresponds to IP address are easier to remember
+• server has the capability of storing several websites
+• DNS will provide the IP address of a website to the internet, its like phone book(ex: if you know the person name but not number you will search by using name)
+• you enter the domain name the browser will send request to the DNS server  to get the corresponding IP address after it gets the IP address browser will send the request to the data center(respective server) then data transfer will happen in the form of light signals and reaching to our router and then router converts light signals to electrical signals  then an ethernet cable is used to transmit the electrical signals to our laptop.
+• in case of wireless cell phone signal will be transefered via cell tower in the form of electro magnetic waves.
+• data will be sent in 0s and 1s and in the form of data packets
+video source https://www.youtube.com/watch?v=x3c1ih2NJEg&list=PLuUdFsbOK_8pWzW7KJjbiJ8Ow0cdHlApV&index=3
+
+
+Download Chrome Browser
+---------------------
+https://www.google.com/intl/en_in/chrome/
+
+Download VS code
+--------------------
+https://code.visualstudio.com/download
+Go for User Installer
+The user installer is recommended because it does not require administrator privileges
+User Installer - particular user
+System Installer - for all the users
+
+Settings - 
+ VS code settings
+ Theme Light
+ turn on word wrap, format on save
+ Emmet is inbuilt in VScode
+ 
+
+VS code extensions
+ 1. Better align
+ 2. Bracket pair colorizer
+ 3. ESLint
+ 4. JavaScript(ES6) code snippets
+ 5. Live Server
+    <!-- if your liveserver is not running manually got this addrres
+	http://127.0.0.1:5500/index.html -->
+ 6. Lorem ipsum
+ 7. Prettier code formater -> cmd + shift + p -> format document
+    <!-- prettier code formatter for auto code indentation
+    and then cntrl + shift + p then type   format document - select prettier -->
+    <!-- go to settings type format on save select the checkbox -->
+ 8. AutoCloseTag
+ 9. Auto Rename Tag
+ 10. Code Spell Checker
+ 11. vscode-icons
+
+
+ 
+2. front end - HTML, CSS, JS, React, Angular | Backend - Django, Ruby on Rails
+Dynamic v/s Static Pages
+*Static pages show the same content each time they are viewed.
+*Dynamic pages have content that can change each time they are
+accessed. 
+
+
+-------------------------------Development-------------------------------------
+1. In order to download VS code https://code.visualstudio.com/download download the windows version.
+Note: D:\Developmentsoftwares\MicrosoftVSCode
+2. VS code is a powerful editor for developing web applications or learning web development.
+3. VS code offers so many extensions that will be very much useful for our web development.
+4. VS code developed by Microsoft.
+5. while installing the VS code you need to select all the checkboxes in order to get the    option to 'open with code' in the windows file explorer.
+6. Go to the Project folder right click -> open with vs code
+7. Alternatively you can open the VS code by following the steps -> in the  windows explorer    clear the address bar content and type 'cmd' it will open the vs code in the current    directory.
+   Note: directory = folder
+8. For the VS code there is a larger community support if we are facing any problem with any    feature of the editor then immediately the developers are going to fix the bugs or will be    updating editor with the patches that are required.
+9. on the left hand side of the editor we have vertical side panel containing some of the    options -> The most important one are Explorer, Extensions and Manage(gear) icon
+10. We can toggle the explorer side bar with ctrl + B
+11. In the explorer itself we can create folders and files, collapsing folders which are opened     there is an icon for each task.
+12. while creating the folder you just need to click on the folder icon.
+    suppose you want to create a file inside that folder, the particular folder node should be     selected and arrow mark should be looking down. Then you can click on file creating icon to     create any type of file.
+    Note: While creating the file you must include the file extensions.
+13. To change the color theme you just need to click on the gear icon and select Themes ->     color theme (select your theme according to your requirement).
+14. Create an app1 folder and inside that create an index.html file
+    Note: HTML file extension can be with '.html' or '.htm' both will be working fine.
+15. To generate the default template code(boiler plate code or starter code) you just need to     press !(exclamation mark) by pressing shift + 1(top number row on the keyboard). 
+    immediately you will get the suggestion from the emmet(inbuilt extension in VS code     helping in auto completion of the code) 
+16. The latest edition of HTML is HTML5 
+15. Make an habit of including <!DOCTYPE html> statement in the beginning of an HTML page to        avoid future issues.
+16.<!DOCTYPE html> indicates that that particular html file has been written by using HTML5.
+17. Browsers will be considering this statement for rendering that HTML page in browser with        repect to HTML version 5 standards.
+18. HTML is a markup language not programming laguage.
+    HTML tells the browser that, what are the contents to be displayed on a web page.
+19. For marking up the web page we have so many 'elements' in the HTML
+    Note: elements are also called as 'tags' 
+20. Most of the element will be having opening and closing tags. Ex: <html></html>
+21. Between opening and the closing tag we will be having the content of that element
+    Ex: <h1>content goes here(we can also call this as the content of this element 'h1'         tag)</h1>
+22. Nesting of elements is also possible Ex: 
+    <html> <!-- root of an html document --> <!--direct parent to head and body elements -->
+	<head>  <!--child to html element and parent to title tag-->
+	    <title></title> <!--child to head and also indirect child to html tag-->
+	</head>
+        <body></body> <!--direct child of html tag-->
+    </html>
+    Note: element == tag
+23. We can able to develop comments in the html by using the syntax <!--comment_goes_here-->
+    we can use this comment synatax for developing both single line and multi-line comments.
+    - comments are just for reference purpose or documentation purpose it will be ignored by          the browser(it will not be considered for displaying the page).
+24. HTML laguage is case INSENSITIVE (i,e you can able to write the tags either in the         upper case of lower case).
+25. In the VS code to close all the tabs but your working tab -> right click on the working tab     and select close others.
+    Note: to close the right side tabs -> select close to the right
+          to close all the tabs including the working tab - > close all
+26. Traditionaly after we develop the html code we need to manually go the file explorer and     open that html page in browser(any browser(if you double click on the html file     automatically it will be rendered in the browser(your default browser))).
+27. Its recommended to user google chrome as your default browser.
+    Note: if your default browser is set to something other than google chrome,
+          to change your default browser from any other browser to google chrome
+          steps: 
+          a. click on windows icon(bottom left corner) -> select settings option
+          b. In the settings window select Apps option -> Apps & Features -> Default Apps on               the left side.
+          c. scroll down and you will find an option for changing the default web brower
+             'web browser' option
+          d. click on currently selected web browser and you will get a list of options to              select a browser.
+          e. select Google Chrome
+             Note: if the already selected browser is Microsoft Edge then if you are trying                    change the browser you will get a small dialogue window saying the new Edge                    is improved and faster. you just need to click on 'switch anyway'
+          f. after the above step your default browser is set to google chrome.
+          g. when you double click on any .html file then that file will be rendered on the new              tab of already opened (if google chrome is already running(otherwise a new              window of google chrome will be opened and rendered in a new tab)) google chrome              window.
+28. Instead of manually opening the HTML file we can make use an extension called Live Server
+    it will automatically rendering our HTML file in the system default browser.
+    Note: To install any extension just click on the extension option on the vertical side           panel -> in the search box type -> Live server -> select the first option and details           will be displayed in the next window. click on install. for this extension there is           no reloading of the editor is required(plug and play).
+    Usage: After the development of your html page you just need to click on 'Go Live' option              which is located on the bottom right corner of the editor.(HTML file will be            automatically rendered on the browser)
+
+29. In order to avoid scrolling to the right in case of more content which are not displayed on     the current editor window, you just need to turn on 'word wrap' option.
+    Steps: Go the settings -> search for word wrap and turn it on from the drop down options.
+30. If in case Live server is not working
+    solutions:
+    1. Go to the settings and search for 'Use current IP' select the checkbox
+    2. Another solution is after you click on Go Live go to any of the browser and type
+       http://127.0.0.1:5500/filename.html 
+       Note: filename.html (on the file you just selected Go Live)
+31. To generate random text inside any of an element like <h1>some random text</h1> or     <p>some random text</p>
+    Note: random text = dummy text = text for testing purpose only
+    We can make use of an inbuilt extension called Loremipsum
+    - to use that just type 'lorem' and press enter on the emmet suggesion and you will be           getting some 20 random word (approx).
+    - to get a specific no. of words you can just type 'lorem200' it will be generating some       random text with 200 words with no specific meaning. 
+32. We have so many tags or elements in the HTML some of are having opening and closing tags      some of are just having opening tag(in the opening tag itself we will be closing that tag     by using forward '/' slash)
+33. To develop the headings we have heading tags(h1, h2, h3, h4, h5, h6)
+    Note: h1 indicates the largest heading.
+          h6 indicates the smallest heading.
+    Note: heading elements are having both opening and closing tags.
+    - we can use the heading tags to develop the headings (which are default in size( in fact       we can also change default size of those tags))
+34. To develop the paragraphs we have the paragraph tag 'p' tag. which is having opening and        closing tag.
+35. HTML is whitespace collapsing
+    - browser is going to automatically remove the unneccessary white spaces.   
+    - in the content of any element if you have unnecessarry spaces that will be automatically removed        by the browser while rendering the html page. 
+
+<img src="" alt="">
+- img tag used for working with images
+- src is an attribute(most of the tags will be having attributes its up us to use them or not(depends on the requirement))
+- attribute syntax: attributeName = "attribute_value"
+- img tag is having mainly two attributes 
+  src ==> to specify the source of an image
+  alt ==> for displaying the alternative text(if in case for any reason the image is not available or the   link is broken then, the alternative text will be displayed)
+- img tag is not having a seperate closing tag, in the opening tag itself we are closing the image tag by    keeping '/' before the '>' 
+
+- To get the copyright free images go to https://www.pexels.com/
+- if the image is present in the current folder itself you can just provide the name of the image with   extension. Ex: src="some_image.jpg"
+- other option is to mention '.' (dot) dot represents the current directory(folder). mention it before     the image file name following mention /
+  Ex: src="./some_image.jpg"
+- if the image is available in the project structure itself then, that path we are calling it as "relative path"
+- use the folder navigation commands for locating your files the project structure.
+  Ex: src="../project_images/some_image.jpg"
+- we can also copy the image URL address from the web and paste it inside the src, that is   what we calling absoulute path(the exact location of that resource on the web)
+- for shortening the URL go to https://free-url-shortener.rb.gy/ and paste the URL and click on   Shorten URL to get the shortened URL you can use that URL within src
+- we have 'alt' attribute in the img tag, the purpose the alt attribute is to display the alternative text if in case of image unavailability(or link has broken).
+- img element is an inline element(its not going to start in a new line, and only takes the space as much as it is neccessary not more).
+
+36. In order to resize the image we can use width and height attributes along with img      tag.
+37. if you are setting the width height will be automatically adjusted for the better      visibiliy of the image.
+38. Heading and paragraph elements are block level
+       What are block level elements?
+     - block level elements are always starting on a new line.
+     - block level elements takes up an entire width of a webpage.(NOT HEIGHT)
+     - after the ending of a block level element you will get a blank line. before the        starting of a new element.
+
+HTML empty elements
+-------------------
+Ex: <br>
+- <br> tag ==> used for line break
+- <br> is an empty tag(there is no content can be included for this tag)
+- <br> tag is not having a seperate closing tag. In the opening tag itself we can close that    tag by using '/' at the end before '>' 
+   Note: using '/' for an element which not having a seperate closing tag is recommended           since there might be a chance of getting errors while working with frameworks                like, ReactJS or Angular.
+- To take care of auto-indentation and closing of tags by providing '/' which are not having    a seperate closing tag. We can install auto formatter extenstion that is available for the    VS code. so that we can avoid the time consumption for indentation and neccessarry    formats for the HTML code.
+   Extension name :: prettier code formatter 
+   Issues while installing prettier-  code formatter: cntrl + shift + p (to open command    pallet) -> search for 'format document' -> format document with -> select prettier-   code formatter.
+
+
+VS code emmet shortcuts
+_______________________
+!
+html>head>title^body>h1+h2+h3+h4*2+h5*3
+
+html>head>title^body>div>h1^div>(table>(tr>td*3)*2)+ul>li*4
+
+html>head>title^body>div>h1^div>table>(tr>td*3)*2+ul>li*4
+
+_________________________________________________________________
+
+Relative path: In case of relative path the resource that you are requesting for might be somewhere in your project folder itself.
+
+Absolute path: In case of absolute path the resource that you are requesting for might be anywhere on the internet.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

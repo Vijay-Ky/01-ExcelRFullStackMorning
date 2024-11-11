@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content</title>
+    <!-- Styling to better show these examples -->
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Forms - Validations</h2>
+      <hr />
+      <h4>Browser Default</h4>
+      <form id="formValidationDefault">
+        <div class="mb-3">
+          <label for="validationDefaultText">Text input</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefaultText"
+            required=""
+          />
+        </div>
+        <div class="mb-3">
+          <div class="input-group">
+            <span class="input-group-text" id="validationDefaultInputGroup"
+              >$</span
+            >
+            <input
+              type="number"
+              class="form-control"
+              aria-label="Amount"
+              aria-describedby="validationDefaultInputGroup"
+              required=""
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="validationDefaultTextarea">Textarea</label>
+          <textarea
+            class="form-control"
+            id="validationDefaultTextarea"
+            rows="5"
+            placeholder="Write your message here."
+            required=""
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="validationDefaultSelect">Select one</label>
+          <select class="form-select" id="validationDefaultSelect" required="">
+            <option value="">Select</option>
+            <option value="1">Option one</option>
+            <option value="2">Option two</option>
+            <option value="3">Option three</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="validationDefaultCheck"
+              required=""
+            />
+            <label class="form-check-label" for="validationDefaultCheck"
+              >Checkbox</label
+            >
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="validationDefaultRadio"
+              id="validationDefaultRadio1"
+              required=""
+            />
+            <label class="form-check-label" for="validationDefaultRadio1"
+              >Radio</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="validationDefaultRadio"
+              id="validationDefaultRadio2"
+              required=""
+            />
+            <label class="form-check-label" for="validationDefaultRadio2"
+              >Radio</label
+            >
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="form-check form-switch">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="validationDefaultSwitch"
+              required=""
+            />
+            <label class="form-check-label" for="validationDefaultSwitch"
+              >Switch</label
+            >
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="form-file">
+            <input
+              type="file"
+              class="form-file-input"
+              id="validationDefaultFile"
+              required=""
+            />
+            <label class="form-file-label" for="validationDefaultFile">
+              <span class="form-file-text">Choose file...</span>
+              <span class="form-file-button">Browse</span>
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit form</button>
+      </form>
+    </div>
+  </body>
+</html>

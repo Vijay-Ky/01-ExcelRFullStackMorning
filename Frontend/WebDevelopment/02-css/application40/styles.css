@@ -1,0 +1,15 @@
+/* display: inline-block
+doesnt not start on new line
+browser respects margin, width, height
+*/
+
+a
+{
+    font-size: 1.5rem;
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    margin: 80px 80px;
+    display: inline-block;
+   
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<!--<html xmlns:th="http://www.thymeleaf.org">: This line sets up the XML namespace for Thymeleaf. This allows you to use Thymeleaf attributes and expressions in your HTML.-->
+    <html xmlns:th="http://www.thymeleaf.org">
+        <head>
+            <title>SpringThymeleaf Demo</title>
+        </head>
+        <body>
+<!--         The th:text attribute is a Thymeleaf attribute. It sets the text content of the paragraph.-->
+<!--           ${theDate}: This is a Thymeleaf expression. It's expecting a variable called theDate to be available in the model when this template is rendered. It will replace ${theDate} with the actual value of theDate.-->
+            <p th:text="'Time on the server is ' + ${theDate}" />
+        </body>
+</html>

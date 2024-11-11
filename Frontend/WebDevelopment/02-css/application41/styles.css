@@ -1,0 +1,64 @@
+div
+{
+    height: 460px;
+    /* width: 1000px; */
+    color: white;
+    border: 5px solid red;
+}
+/* header
+{
+    height: 460px;
+    border: 2px solid black;
+} */
+
+.big-img
+{
+    background: url('./big.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: ; */
+    /* background-attachment: scroll; */
+    background-attachment: fixed;
+}
+
+.small-img
+{
+    background: url('./small.jpeg');
+    /* background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: space;
+    background-repeat: round;
+    background-repeat: space repeat;
+    background-repeat: space;
+    background-size: cover; */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-position: 20% 50%; */
+    /* background-position: top left;
+    background-position: left; */
+    /* background-position: 0% 50%; */
+    /* background-position: right; */
+    /* background-position: bottom; */
+    /* background-position: 50% 100%; 
+    background-position: top;  */
+    background-position: 50% 0%; 
+    background-position: 100% 100%; 
+
+}
+
+.folder-img
+{
+    background: url('./images/folder-img.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.header-class
+{
+    /* background: url('./images/folder-img.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+

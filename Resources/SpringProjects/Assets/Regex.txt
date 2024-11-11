@@ -1,0 +1,18 @@
+Regex
+-----------
+Passwords must have upper and lower case letters, at least 1 number and special character, not match or contain email, and be at least 8 characters long.
+^(?!.*\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b)(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
+
+-----------
+
+Username must not have numbers, space and any special characters and at least 2 characters in length, not match or contain email
+^(?!.*\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b)[A-Za-z]{2,}$
+
+--------------------
+Username must not have numbers, space and any special characters and at least 1 characters in length, not match or contain email
+^(?!.*\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b)[A-Za-z]{1,}$
+--------------------------
+
+
+
+

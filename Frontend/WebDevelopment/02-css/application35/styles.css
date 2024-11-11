@@ -1,0 +1,35 @@
+*
+{
+    margin: 0;
+}
+
+h1,
+p
+{
+    color: white;
+}
+
+h1
+{
+    background-color: red;
+    padding: 20px;
+    margin: 3rem;
+    border-style: solid;
+    border-color: chartreuse;
+    border-width: 10px;
+}
+
+p
+{
+    background-color: blue;
+    margin: 4rem 4px 50px 10px;
+    padding: 5px 20px 50px 40px;
+    border-style: dotted;
+    border-color: red;
+    border-width: 20px;
+    text-shadow: 1px 1px 2px pink;
+
+    border-bottom-color: green;
+    border-top-style: double;
+    border-right-width: 30px;
+}

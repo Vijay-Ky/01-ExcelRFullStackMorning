@@ -1,0 +1,11 @@
+@media screen and (min-width: 576px) {
+    .table {
+      float: left;
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .table {
+      width: 25%;
+    }
+  }

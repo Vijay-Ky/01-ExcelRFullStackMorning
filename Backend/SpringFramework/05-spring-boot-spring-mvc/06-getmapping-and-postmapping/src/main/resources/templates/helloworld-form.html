@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World - Input Form</title>
+    </head>
+    <body>
+<!--   method="POST": This specifies the HTTP method that will be used to submit the form data. In this case, it's set to POST. This means that when the form is submitted, the data will be sent to the server as part of the request body. -->
+<!--   method="GET": This specifies the HTTP method that will be used to submit the form data. In this case, it's set to GET. This means that when the form is submitted, the data will be appended to the URL as query parameters. -->
+    <!--            <form th:action="@{/processFormVersionThree}" method="GET">-->
+        <form th:action="@{/processFormVersionThree}" method="GET">
+            <input type="text" name="studentName" placeholder="What's your name?" />
+            <input type="submit" />
+        </form>
+    </body>
+</html>

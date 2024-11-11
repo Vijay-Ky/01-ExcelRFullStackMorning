@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .row {
+        background-color: lavender;
+        outline: 1px solid white;
+      }
+      [class^="col"]:not(.collapse) {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: #6c757d;
+        color: white;
+        border: 1px solid white;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h2>Grid System</h2>
+    <hr />
+    <div class="mb-5">
+      <div class="container">
+        <h3>Equal width</h3>
+        <p>Grid with auto-layout and equal width</p>
+      </div>
+      <div class="container">
+        <!-- Grid with with two rows -->
+        <!-- first row two columns -->
+        <!-- first row three columns -->
+        <div class="row">
+          <div class="col">column 1</div>
+          <div class="col">column 2</div>
+        </div>
+        <div class="row">
+          <div class="col">column 1</div>
+          <div class="col">column 2</div>
+          <div class="col">column 3</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Bootstrap Grids -->
+<!-- Bootstrap Grid System
+Bootstrap's grid system allows up to 12 columns across the page.
+
+If you do not want to use all 12 columns individually, you can group the columns together to create wider columns: -->
+<!-- Bootstrap's grid system is responsive, and the columns will re-arrange automatically depending on the screen size. -->
+<!-- Grid Classes
+The Bootstrap grid system has four classes:
+
+xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+The classes above can be combined to create more dynamic and flexible layouts.
+
+Three Equal Columns
+The following example shows how to get a three equal-width columns starting at tablets and scaling to large desktops. On mobile phones or screens that are less than 768px wide, the columns will automatically stack:
+
+-->

@@ -1,0 +1,67 @@
+<form>
+  Country: &nbsp;&nbsp;
+  <select name="country" onchange="populateStates()">
+    <option value="0">Select Country</option>
+    <option value="1">INDIA</option>
+    <option value="2">USA</option>
+    <option value="3">UK</option>
+    <option value="4">Germany</option>
+    <option value="5">Canada</option>
+  </select>
+  <br />
+  <!-- based on the country selection states will be displayed -->
+  <!-- to display the states of a particular country we are developing this temporary element -->
+  <div id="states">
+    States:&nbsp;&nbsp;
+    <select name="state" onclick="checkSelectedCountry()">
+      <option value="0">Select State</option>
+    </select>
+  </div>
+</form>
+<script>
+  function checkSelectedCountry() {
+    var myForm = document.forms[0];
+    var countrySelection = myForm.country;
+    if (countrySelection.value == "0") {
+      alert("Select country!!");
+      countrySelection.focus();
+    }
+  }
+  function populateStates() {
+    var myForm = document.forms[0];
+    var countrySelection = myForm.country;
+
+    var s1 =
+      "State: <select name='state'> <option value='0'>Select State</option>";
+
+    if (countrySelection.value == "1") {
+      s1 += "<option value='1'>Karnataka</option>";
+      s1 += "<option value='2'>Mumbai</option>";
+      s1 += "<option value='3'>Maharastra</option>";
+      s1 += "<option value='4'>Punjab</option>";
+    } else if (countrySelection.value == "2") {
+      s1 += "<option value='1'>NewYork</option>";
+      s1 += "<option value='2'>Mexico</option>";
+      s1 += "<option value='3'>California</option>";
+      s1 += "<option value='4'>Texas</option>";
+    } else if (countrySelection.value == "3") {
+      s1 += "<option value='1'>England</option>";
+      s1 += "<option value='2'>Scotland</option>";
+      s1 += "<option value='3'>Wales</option>";
+      s1 += "<option value='4'>Northern Ireland</option>";
+    } else if (countrySelection.value == "4") {
+      s1 += "<option value='1'>Bavaria</option>";
+      s1 += "<option value='2'>Hessen</option>";
+      s1 += "<option value='3'>Saxony</option>";
+      s1 += "<option value='4'>Saarland</option>";
+    } else if (countrySelection.value == "5") {
+      s1 += "<option value='1'>Ontario</option>";
+      s1 += "<option value='2'>Alberta</option>";
+      s1 += "<option value='3'>Manitoba</option>";
+      s1 += "<option value='4'>British Columbia</option>";
+    }
+
+    s1 += "</select>";
+    document.getElementById("states").innerHTML = s1;
+  }
+</script>

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Tilt+Prism&display=swap');
+
+h1
+{
+    font-family: 'Tilt Prism', cursive;
+}
+
+p
+{
+    font-family: 'Source Code Pro', monospace;
+}

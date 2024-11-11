@@ -1,0 +1,24 @@
+h1,
+p
+{
+    color: white;
+}
+
+h1
+{
+    background-color: red;
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    /* display: inline; */
+}
+
+p
+{
+    background-color: blue;
+    /* padding: 40px; */
+    /* padding: 80px 60px; */
+    /* top, right, bottom, left */
+    padding: 5px 20px 50px 40px;
+}

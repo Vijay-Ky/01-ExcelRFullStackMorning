@@ -1,0 +1,14 @@
+/* id selectors */
+#title {
+  color: green;
+  background-color: black;
+}
+
+#subheading {
+  color: red;
+  background-color: grey;
+}
+
+p {
+  color: grey;
+}

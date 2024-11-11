@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="p1">initial content</p>
+    <input
+      type="button"
+      value="populate array content"
+      onclick="readArrayContent()"
+    />
+    <input
+      type="button"
+      value="sort array content based on first name"
+      onclick="sortArrayContentBasedOnFirstName()"
+    />
+    <input
+      type="button"
+      value="sort array content based on last name"
+      onclick="sortArrayContentBasedOnLastName()"
+    />
+    <input
+      type="button"
+      value="sort array content based on age"
+      onclick="sortArrayContentBasedAge()"
+    />
+    <script>
+      var elements = [
+        { firstName: "z", lastName: "h", age: 22 },
+        { firstName: "f", lastName: "g", age: 25 },
+        { firstName: "g", lastName: "f", age: 28 },
+        { firstName: "d", lastName: "e", age: 27 },
+      ];
+
+      function readArrayContent() {
+        var str = "";
+        var element;
+
+        for (var i = 0; i < elements.length; i++) {
+          element = elements[i];
+          str +=
+            element.firstName +
+            ", " +
+            element.lastName +
+            ", " +
+            element.age +
+            "</br>";
+        }
+
+        document.getElementById("p1").innerHTML = str;
+      }
+
+      function sortArrayContentBasedOnFirstName() {
+        elements.sort(function (a, b) {
+          //if it return positive value then 'a' gets the higher index than 'b' and hence a comes after b
+          if (a.firstName > b.firstName) {
+            //99 > 100 == false
+            //98 > 99 == false
+            alert(
+              "comparing wheather: " +
+                a.firstName +
+                " > " +
+                b.firstName +
+                " so: first: " +
+                b.firstName +
+                "then: " +
+                a.firstName
+            );
+            return 1;
+          }
+          //if it returns negative value, a comes first by getting lower index than b
+          else if (a.firstName < b.firstName) {
+            ////99 < 100 == true (c < d) == c, d
+            //98 < 99 == true (b < c) == b, c
+            //97 < 98 == true (a < b) == a, b
+            alert(
+              "comparing wheather: " +
+                a.firstName +
+                " < " +
+                b.firstName +
+                " so: first: " +
+                a.firstName +
+                "then: " +
+                b.firstName
+            );
+            //c > d 99 < 100
+            return -1;
+          } else if (a.firstName == b.firstName) {
+            alert(
+              "comparing wheather: " +
+                a.firstName +
+                " == " +
+                b.firstName +
+                "so: both are equal no changes will be made"
+            );
+            return 0;
+          }
+        });
+        readArrayContent();
+      }
+
+      function sortArrayContentBasedOnLastName() {
+        elements.sort(function (a, b) {
+          //if it return positive value then 'a' gets the higher index than 'b' and hence a comes after b
+          if (a.lastName > b.lastName) {
+            alert(
+              "comparing wheather: " +
+                a.lastName +
+                " > " +
+                b.lastName +
+                " so: first: " +
+                b.lastName +
+                " then only: " +
+                a.lastName
+            );
+            return 1;
+          }
+          //if it returns negative value, a comes first by getting lower index than b
+          else if (a.lastName < b.lastName) {
+            //g < h (103 < 104) true 103, 104
+            //f < g (102 < 103) true 102, 103
+            //e < f (101 < 102) true 101, 102
+            alert(
+              "comparing wheather: " +
+                a.lastName +
+                " < " +
+                b.lastName +
+                " so: first: " +
+                a.lastName +
+                "then: " +
+                b.lastName
+            );
+            return -1;
+          } else if (a.lastName == b.lastName) {
+            alert(
+              "comparing wheather: " +
+                a.lastName +
+                " == " +
+                b.lastName +
+                "so: both are equal no changes will be made"
+            );
+            return 0;
+          }
+        });
+        readArrayContent();
+      }
+
+      // function sortArrayContentBasedAge() {
+      //   elements.sort(function (a, b) {
+      //     //if it return positive value then 'a' gets the higher index than 'b' and hence a comes after b
+      //     if (a.age > b.age) {
+      //       alert(
+      //         "comparing wheather: " +
+      //           a.age +
+      //           " > " +
+      //           b.age +
+      //           " so: first: " +
+      //           b.age +
+      //           " then only: " +
+      //           a.age
+      //       );
+      //       return 1;
+      //     }
+      //     //if it returns negative value, a comes first by getting lower index than b
+      //     else if (a.age < b.age) {
+      //       alert(
+      //         "comparing wheather: " +
+      //           a.age +
+      //           " < " +
+      //           b.age +
+      //           " so: first: " +
+      //           a.age +
+      //           "then: " +
+      //           b.age
+      //       );
+      //       return -1;
+      //     } else if (a.age == b.age) {
+      //       alert(
+      //         "comparing wheather: " +
+      //           a.age +
+      //           " == " +
+      //           b.age +
+      //           "so: both are equal no changes will be made"
+      //       );
+      //       return 0;
+      //     }
+      //   });
+      //   readArrayContent();
+      // }
+
+      function sortArrayContentBasedAge() {
+        elements.sort(function (a, b) {
+          return a.age - b.age;
+        });
+        readArrayContent();
+      }
+    </script>
+  </body>
+</html>

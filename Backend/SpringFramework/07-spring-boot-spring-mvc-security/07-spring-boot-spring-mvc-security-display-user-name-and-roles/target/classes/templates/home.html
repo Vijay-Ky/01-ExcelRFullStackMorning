@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Backstreet Paper Company</title>
+    </head>
+    <body>
+        <h2>Backstreet Paper Company Home Page - FirstAppearance, SecondAppearance! ThirdAppearance! FourthAppearance! </h2>
+        <hr/>
+        <p> Welcome to the Backstreet Paper Company home page!</p>
+        <hr>
+        <!-- display user name and role -->
+        <p>
+            User: <span sec:authentication="principal.username"></span>
+            <br><br>
+            Role(s): <span sec:authentication="principal.authorities"></span>
+        </p>
+        <hr>
+        <!-- Add a logout button -->
+        <form action="#" th:action="@{/logout}" method="POST">
+            <input type="submit" value="Logout" />
+        </form>
+    </body>
+</html>

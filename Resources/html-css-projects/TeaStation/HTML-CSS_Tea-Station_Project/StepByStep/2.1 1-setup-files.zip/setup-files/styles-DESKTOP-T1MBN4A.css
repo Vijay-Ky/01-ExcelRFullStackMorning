@@ -1,0 +1,27 @@
+
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+
+
+/* to get rid of default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  /* to keep the layout in place */
+  box-sizing: border-box;
+}
+:root {
+  /* global variables */
+  --slantedText: "Grand Hotel", cursive;
+  --primaryColor: #698f3f;
+  --secondaryColor: #fca311;
+  --mainDark: #3a3e3b;
+  --mainWhite: #fff;
+  --mainGrey: #e5e5e5;
+  --mainTransition: all 0.3s ease-in-out;
+  --letterSpacing: 0.5rem;
+}
+body {
+  font-family: "Catamaran", sans-serif;
+  /* number	- A number that will be multiplied with the current font-size to set the line height */
+  line-height: 1.5;
+}

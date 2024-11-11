@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form action="/action_page.php">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+        />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+        <input
+          type="password"
+          id="retype-password"
+          name="retype-password"
+          placeholder="Retype Password"
+        />
+        <select name="country">
+          <option value="">Select Country</option>
+          <option value="Afganistan">Afghanistan</option>
+          <option value="Albania">Albania</option>
+        </select>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="First Name"
+        />
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="Last Name"
+        />
+        <input
+          type="text"
+          id="job-title"
+          name="job-title"
+          placeholder="Job Title"
+        />
+        <input
+          type="tel"
+          id="work-phone"
+          name="work-phone"
+          placeholder="Work Phone"
+        />
+        <input
+          type="text"
+          id="company-name"
+          name="company-name"
+          placeholder="Company Name"
+        />
+        <input type="text" id="address" name="address" placeholder="Address" />
+        <input type="text" id="city" name="city" placeholder="City" />
+        <select name="state-province">
+          <option value="">Select State/Province</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+        </select>
+        <input
+          type="text"
+          id="zip-code"
+          name="zip-code"
+          placeholder="ZIP/Postal Code"
+        />
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female">Female</label>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>

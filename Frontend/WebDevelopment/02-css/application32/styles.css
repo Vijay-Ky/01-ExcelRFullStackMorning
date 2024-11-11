@@ -1,0 +1,30 @@
+body
+{
+    /* text-align: right; */
+    line-height: 1.5;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.5rem;
+    text-decoration: overline;
+    word-spacing: 10px;
+    text-transform: capitalize;
+}
+
+.main-heading
+{
+    text-align: center;
+}
+
+.two
+{
+    /* text-align: left; */
+    /* text-align: center; */
+    text-align: justify;
+    text-indent: 6rem;
+}
+
+a
+{
+    font-size: 3rem;
+    text-decoration: none;
+}
+
